@@ -1,0 +1,39 @@
+@import 'nglp.scss';
+@import 'animation/nglp-animations.scss';
+
+
+@font-face {
+  font-family: 'Barlow Regular';
+  src: url(./fonts/Barlow-Regular.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'BarlowSemiCondensed-ExtraLight';
+  src: url(./fonts/BarlowSemiCondensed-ExtraLight.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Barlow Bold';
+  src: url(./fonts/Barlow-Bold.ttf) format("opentype");
+}
+
+$custom-typography: mat-typography-config($font-family: Barlow Regular !important);
+@include angular-material-typography($custom-typography);
+
+html,
+body {
+  font-family: Barlow Regular !important;
+}
+
+.spacer {
+  flex: 1 1 auto !important;
+}
+
+
+.scrollOff {
+  overflow: hidden !important;
+}
+
+button:focus {
+  outline: transparent !important
+}
